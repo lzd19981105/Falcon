@@ -14,12 +14,7 @@ from tqdm import tqdm
 from transformers import AdamW, AutoModelForCausalLM, AutoProcessor, get_scheduler
 
 # import wandb
-from data import (
-    DocVQADataset,
-    TheCauldronDataset,
-    VQAInstructDataset,
-    RSDataset,
-)
+from data import RSDataset
 from peft import LoraConfig, get_peft_model
 
 
@@ -91,14 +86,7 @@ def create_data_loaders(
 
 
 def evaluate_model(
-    world_rank,
-    model,
-    val_loaders,
-    device,
-    processor,
-    epoch,
-    max_val_step,
-    log_file_dir
+    world_rank, model, val_loaders, device, processor, epoch, max_val_step, log_file_dir
 ):
     # Evaluation phase
     model.eval()
@@ -172,22 +160,7 @@ def train_model(
         run_name = fw.generate(2, separator="_")
 
     # Load the dataset based on the dataset_name argument
-    if dataset_name == "docvqa":
-        train_dataset = DocVQADataset(split="train")
-        val_datasets = {"docvqa": DocVQADataset(split="validation")}
-    elif dataset_name == "cauldron":
-        train_dataset = TheCauldronDataset(split="train")
-        val_datasets = {
-            "cauldron": TheCauldronDataset(split="validation"),
-            "docvqa": DocVQADataset(split="validation"),
-        }
-    elif dataset_name == "vqainstruct":
-        train_dataset = VQAInstructDataset(split="train")
-        val_datasets = {
-            "vqainstruct": VQAInstructDataset(split="validation"),
-            "docvqa": DocVQADataset(split="validation"),
-        }
-    elif dataset_name == "rs":
+    if dataset_name == "rs":
         train_dataset = RSDataset(split="train", json_file=json_file)
         val_datasets = {
             "rs": RSDataset(split="test", json_file=json_file),
@@ -339,7 +312,7 @@ def train_model(
             processor,
             epoch,
             max_val_step,
-            log_file_dir
+            log_file_dir,
         )
 
     cleanup()
@@ -347,7 +320,7 @@ def train_model(
 
 def main():
     parser = argparse.ArgumentParser(
-        description="Train Florence-2 model on specified dataset"
+        description="Train Falcon model on specified dataset"
     )
     parser.add_argument(
         "--local_size", type=int, default=8, help="number of gpus per node"
@@ -365,7 +338,7 @@ def main():
     parser.add_argument(
         "--checkpoint_path",
         type=str,
-        default="Florence-2-large-ft",
+        default="Falcon",
         help="path to pretrained checkpoint",
     )
     parser.add_argument(
