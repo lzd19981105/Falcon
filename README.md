@@ -101,7 +101,7 @@ Download FCD-78M dataset which can be found in [here](https://modelscope.cn/mode
 |...
 ```
 
-2. Here we give an example of a training script used for single instruction training. You may runing this script on master machine node and every slave machine node you have. Note that the corresponding parameters in this script should be modified according to the node on which it is running.
+2. Here we give an example of a training script used for single instruction training. You may runing this script on master machine node and every slave machine node you have. Note that some parameters in this script should be modified according to the machine node on which it is running.
 
 ```bash
 RANK=0 # The node idx of current machine node
