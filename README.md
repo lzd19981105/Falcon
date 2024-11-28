@@ -136,6 +136,7 @@ CUDA_VISIBLE_DEVICES=$GPU python single_gpu_inference_eval.py \
     --model-path model_checkpoints/<checkpoint_dir_name> \
     --eval-file Datasets/test_label/single_instruction_conversation_test.json \
     --dataset-path FCD-78M \
+    --model-name Falcon \
     --result-path ./ \
     --batch_size 8 \  # Adjust this value according to your GPU memory
     --num_workers 2 \
