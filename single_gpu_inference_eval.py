@@ -74,7 +74,7 @@ class RSDataset(Dataset):
 
     def __init__(self, args, data):
         self.data = data
-        self.root_path = args.root_path
+        self.root_path = args.dataset_path
 
     def __len__(self):
         return len(self.data)
@@ -368,7 +368,7 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument("--model-path", type=str, help="checkpoint path")
     parser.add_argument("--eval-file", type=str, help="the evaluation json file")
-    parser.add_argument("--root-path", type=str, help="root path of the evaluation data")
+    parser.add_argument("--dataset-path", type=str, help="root path of the evaluation data")
     parser.add_argument("--model-name", type=str, default="eval_model", help="specify the model name")
     parser.add_argument("--result-path", type=str, default="./")
     parser.add_argument("--batch-size", type=int, default=8)
