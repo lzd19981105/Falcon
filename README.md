@@ -128,9 +128,25 @@ python multi_node_distributed_train.py \
 <details>
   <summary>Evaluating Falcon with FCD-78M (click to expand)</summary>
 
-1. ...
+1. Here we provide an example of the evaluation program to evaluate Falcon using FCD-78M dataset with the json annotation file.
 
-2. ...
+```bash
+GPU=0
+CUDA_VISIBLE_DEVICES=$GPU python single_gpu_inference_eval.py \
+    --model-path model_checkpoints/<checkpoint_dir_name> \
+    --eval-file Datasets/test_label/single_instruction_conversation_test.json \
+    --dataset-path FCD-78M \
+    --result-path ./ \
+    --batch_size 8 \  # Adjust this value according to your GPU memory
+    --num_workers 2 \
+```
+
+2. To calculate the evaluation metrics, please follow this bash format.
+
+```bash
+python evaluation.py
+```
+
 </details>
 
 ## License
