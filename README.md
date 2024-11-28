@@ -141,12 +141,22 @@ CUDA_VISIBLE_DEVICES=$GPU python single_gpu_inference_eval.py \
     --num_workers 2 \
 ```
 
-2. To calculate the evaluation metrics, please follow this bash format.
+2. Running Evaluation Scripts for Single File and Batch Processing. To calculate evaluation metrics using the evaluation.py script, follow the commands below depending on whether you want to process a single file or all files in a folder.
+   
+ - `Process a Single Evaluation File` Run the command below, replacing "eval/tmp/model/falcon_CLS.json" with the path to your evaluation file and "falcon" with your model name:
 
 ```bash
-python evaluation.py
+python eval/evaluation.py \
+    --evaluation-file eval/tmp/model/falcon_CLS.json \
+    --model_name falcon
 ```
+- `Process All Evaluation Files in a Folder` Run the command below, replacing "eval/tmp/model/" with the path to the folder containing your evaluation files and "falcon" with your model name:
 
+```bash
+python eval/evaluation.py \
+    --evaluation-folder eval/tmp/model/ \
+    --model_name falcon
+```
 </details>
 
 ## License
