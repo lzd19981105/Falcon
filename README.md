@@ -17,6 +17,11 @@
 
 </div>
 
+## Introduction
+We are excited to introduce Falcon, which offers a unified, prompt-based paradigm that effectively executes comprehensive and complex remote sensing vision tasks. Falcon demonstrates powerful understanding and reasoning abilities at the image, region, and pixel levels. Specifically, given simple natural language instructions and remote sensing images, Falcon can produce impressive results in text form across 14 distinct tasks, i.e., image classification, object detection, segmentation, image captioning, and etc.
+
+\<place our GIF here\>
+
 ## News 🚀🚀🚀
 
 - `2024/11/27`: Falcon has been released. The model checkpoints is now available on HuggingFace, and both training / evaluation data and scripts are open-sourced.
@@ -54,13 +59,14 @@
 
 <details>
   <summary>Installation (click to expand)</summary>
+You can use the following script to install the environment：
 
 ```bash
 conda create -n falon python=3.10
 conda activate falcon
 pip install -r requirements.txt
 ```
-
+Optionally, we also provide a Docker image in [here](https://modelscope.cn/models/OpenGVLab/InternVL2-1B) for fast deployment of the environment.
 </details>
 
 <details>
