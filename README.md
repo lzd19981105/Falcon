@@ -127,7 +127,7 @@ python multi_node_distributed_train.py \
     --num_workers 2 \
     --batch_size 7 \  # Adjust this value according to your GPU memory
     --epochs 3 \
-    --run_name Falcon-Single-Instruction-0.7B_new
+    --run_name <name_of_training_task>    # edit the name of this training task
 ```
 </details>
 
