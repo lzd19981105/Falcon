@@ -74,20 +74,19 @@ Optionally, we also provide a Docker image in [here](https://hub.docker.com/r/ti
 
 Download FCD-78M dataset which can be found in [here](https://modelscope.cn/models/OpenGVLab/InternVL2-1B). Then, unzip and place/link the dataset at the root path of this repo. The directory structure should be as follows:
 ```bash
-|-Datasets
-|----XXX_task
-|    |---xxxxx.jpg
-|    ...
-|----XXX_task
-|    |---xxxxx.jpg
-|    ...
-|----train_label
-|    |---single_instruction_conversation_train.json
-|    |---multi_instruction_conversation_train.json
-|    ...
-|----test_label
-|    |---XXX_test.json
-|    ...
+|-FCD
+|----json_train_taskall
+|    |---train_task14_all.json
+|----Task01_IMG_CLS
+|    |---test
+|    |---train
+|----Task02_IMG_CAP
+|    |---test
+|    |---train
+|----Task03_IMG_CAP_DETAILED
+|    |---test
+|    |---train
+...
 ```
 
 </details>
@@ -121,9 +120,9 @@ python multi_node_distributed_train.py \
     --world_size $(($GPU_NUM*$WORLD_SIZE)) \
     --master_addr $MASTER_ADDR \
     --master_port $MASTER_PORT \
-    --checkpoint_path model_checkpoints/<checkpoint_dir_name> \
+    --checkpoint_path model_checkpoints/<checkpoint_dir_name> \  # choose the checkpoint you want
     --dataset FCD-78M \
-    --label_json Datasets/train_label/single_instruction_conversation_train.json \
+    --label_json FCD/json_train_taskall/train_task14_all.json \
     --num_workers 2 \
     --batch_size 7 \  # Adjust this value according to your GPU memory
     --epochs 3 \

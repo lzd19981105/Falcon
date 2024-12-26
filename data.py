@@ -50,7 +50,7 @@ class RSDataset(BaseDataset):
         if img_dir is None:
             image = Image.fromarray(np.zeros((448, 448, 3)), mode="RGB")
         else:
-            image_dir = os.path.join("Datasets", img_dir[0])
+            image_dir = img_dir[0]
             try:
                 image = Image.open(image_dir).convert("RGB")
                 if img_crop != []:
@@ -60,7 +60,7 @@ class RSDataset(BaseDataset):
                 image = Image.fromarray(np.zeros((448, 448, 3)), mode="RGB")
 
             if len(img_dir) == 2:
-                image_dir = os.path.join("Datasets", img_dir[1])
+                image_dir = img_dir[1]
                 try:
                     image2 = Image.open(image_dir).convert("RGB")
                     if img_crop != []:
