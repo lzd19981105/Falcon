@@ -32,21 +32,25 @@ We are excited to introduce Falcon, which offers a unified, prompt-based paradig
 <table>
   <tr>
     <th>Model Name</th>
+    <th>Model Size</th>
     <th>HF&nbsp;Link</th>
     <th>MS&nbsp;Link</th>
   </tr>
   <tr>
-    <td>Falcon-Single-Instruction-0.7B</td>
+    <td>Falcon-Single-Instruction-Large</td>
+    <td>0.7B</td>
     <td><a href="https://huggingface.co/OpenGVLab/InternVL2-1B">🤗 link</a></td>
     <td><a href="https://modelscope.cn/models/OpenGVLab/InternVL2-1B">🤖 link</a></td>
   </tr>
   <tr>
-    <td>Falcon-Multi-Instruction-0.7B</td>
+    <td>Falcon-Multi-Instruction-Large</td>
+    <td>0.7B</td>
     <td><a href="https://huggingface.co/OpenGVLab/InternVL2-1B">🤗 link</a></td>
     <td><a href="https://modelscope.cn/models/OpenGVLab/InternVL2-1B">🤖 link</a></td>
   </tr>
   <tr>
-    <td>Falcon-Single-Instruction-0.3B</td>
+    <td>Falcon-Single-Instruction-Base</td>
+    <td>0.3B</td>
     <td><a href="https://huggingface.co/OpenGVLab/InternVL2-1B">🤗 link</a></td>
     <td><a href="https://modelscope.cn/models/OpenGVLab/InternVL2-1B">🤖 link</a></td>
   </tr>
@@ -117,6 +121,7 @@ MASTER_PORT=12355 # The port of the master machine node
 
 python multi_node_distributed_train.py \
     --node_rank $RANK \
+    --local_size $GPU_NUM
     --world_size $(($GPU_NUM*$WORLD_SIZE)) \
     --master_addr $MASTER_ADDR \
     --master_port $MASTER_PORT \
@@ -126,7 +131,7 @@ python multi_node_distributed_train.py \
     --num_workers 2 \
     --batch_size 7 \  # Adjust this value according to your GPU memory
     --epochs 3 \
-    --run_name Falcon-Single-Instruction-0.7B_new
+    --run_name <name_of_training_task>    # edit the name of this training task
 ```
 </details>
 
