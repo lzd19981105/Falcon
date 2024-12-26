@@ -10,5 +10,7 @@ inference
 runs
 test_images
 visualization_lab
-Falcon_base
-Falcon_large
+Falcon-Single-Instruction-Base
+Falcon-Single-Instruction-Large
+Falcon-Multi-Instruction-Large
+FCD
