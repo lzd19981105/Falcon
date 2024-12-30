@@ -144,7 +144,7 @@ python multi_node_distributed_train.py \
 GPU=0
 CUDA_VISIBLE_DEVICES=$GPU python single_gpu_inference_eval.py \
     --model-path model_checkpoints/<checkpoint_dir_name> \
-    --eval-file Datasets/test_label/single_instruction_conversation_test.json \
+    --eval-file FCD/<task_dir>/test/Annotation_test.json \
     --dataset-path FCD-78M \
     --model-name Falcon \
     --result-path ./ \
