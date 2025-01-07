@@ -81,6 +81,7 @@ Download FCD-78M dataset which can be found in [here](https://modelscope.cn/mode
 |-FCD
 |----json_train_taskall
 |    |---train_task14_all.json
+|    |---train_task14_all_multi-instructions-version.json
 |----Task01_IMG_CLS
 |    |---test
 |    |---train
