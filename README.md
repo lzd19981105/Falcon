@@ -40,7 +40,7 @@ We are excited to introduce Falcon, which offers a unified, prompt-based paradig
     <td>Falcon-Single-Instruction-Large</td>
     <td>0.7B</td>
     <td><a href="https://huggingface.co/OpenGVLab/InternVL2-1B">🤗 link</a></td>
-    <td><a href="https://modelscope.cn/models/OpenGVLab/InternVL2-1B">🤖 link</a></td>
+    <td><a href="https://www.modelscope.cn/models/TianHuiLab/Falcon-Single-Instruction-Large">🤖 link</a></td>
   </tr>
   <tr>
     <td>Falcon-Multi-Instruction-Large</td>
@@ -52,7 +52,7 @@ We are excited to introduce Falcon, which offers a unified, prompt-based paradig
     <td>Falcon-Single-Instruction-Base</td>
     <td>0.3B</td>
     <td><a href="https://huggingface.co/OpenGVLab/InternVL2-1B">🤗 link</a></td>
-    <td><a href="https://modelscope.cn/models/OpenGVLab/InternVL2-1B">🤖 link</a></td>
+    <td><a href="https://www.modelscope.cn/models/TianHuiLab/Falcon-Single-Instruction-Base">🤖 link</a></td>
   </tr>
 </table>
 
@@ -76,7 +76,7 @@ Optionally, we also provide a Docker image in [here](https://hub.docker.com/r/ti
 <details>
   <summary>Datasets preperation (click to expand)</summary>
 
-Download FCD-78M dataset which can be found in [here](https://modelscope.cn/models/OpenGVLab/InternVL2-1B). Then, unzip and place/link the dataset at the root path of this repo. The directory structure should be as follows:
+Download FCD-78M dataset which can be found in [here](https://www.modelscope.cn/datasets/TianHuiLab/FCD-78M). Then, unzip and place/link the dataset at the root path of this repo. The directory structure should be as follows:
 ```bash
 |-FCD
 |----json_train_taskall
