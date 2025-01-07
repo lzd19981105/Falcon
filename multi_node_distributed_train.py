@@ -338,7 +338,7 @@ def main():
     parser.add_argument(
         "--checkpoint_path",
         type=str,
-        default="Falcon",
+        default="Falcon-Single-Instruction-Large",
         help="path to pretrained checkpoint",
     )
     parser.add_argument(
