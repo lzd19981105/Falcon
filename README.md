@@ -45,8 +45,8 @@ We are excited to introduce Falcon, which offers a unified, prompt-based paradig
   <tr>
     <td>Falcon-Multi-Instruction-Large</td>
     <td>0.7B</td>
-    <td><a href="https://huggingface.co/OpenGVLab/InternVL2-1B">🤗 link</a></td>
-    <td><a href="https://modelscope.cn/models/OpenGVLab/InternVL2-1B">🤖 link</a></td>
+    <td><a href="https://huggingface.co/TianHuiLab/Falcon-Multi-Instruction-Large">🤗 link</a></td>
+    <td><a href="https://www.modelscope.cn/models/TianHuiLab/Falcon-Multi-Instruction-Large">🤖 link</a></td>
   </tr>
   <tr>
     <td>Falcon-Single-Instruction-Base</td>
