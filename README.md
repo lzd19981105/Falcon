@@ -24,7 +24,7 @@ We are excited to introduce Falcon, which offers a unified, prompt-based paradig
 
 ## News 🚀🚀🚀
 
-- `2024/11/27`: Falcon has been released. The model checkpoints is now available on HuggingFace, and both training / evaluation data and scripts are open-sourced.
+- `2024/11/27`: Falcon has been released. The model checkpoints is now available on HuggingFace & modelscope, and both training / evaluation scripts are open-sourced. The FCD-78M dataset is coming soon!
 
 
 ## Model Zoo
