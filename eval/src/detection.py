@@ -121,6 +121,11 @@ def voc_ap(rec, prec):
     ap = 0.0
     for i in i_list:
         ap += ((mrec[i]-mrec[i-1])*mpre[i])
+
+    print ('-----')
+    print ('prec', prec)
+    print ("sm precision", mpre)
+    print ("indices",mrec)
     return ap, mrec, mpre
 
 
@@ -428,18 +433,20 @@ def evaluate_detection(GT_PATH = 'tmp/ground-truth/',
         output_file.write("# AP and precision/recall per class\n")
         count_true_positives = {}
         for class_index, class_name in enumerate(gt_classes):
+            print (class_name)
             count_true_positives[class_name] = 0
             """
              Load detection-results of that class
             """
             dr_file = TEMP_FILES_PATH + "/" + class_name + "_dr.json"
             dr_data = json.load(open(dr_file))
-    
+            print (dr_data)
             """
              Assign detection-results to ground-truth objects
             """
             nd = len(dr_data)
             tp = [0] * nd # creates an array of zeros of size nd
+            iou_tester = [0] * nd # creates an array of zeros of size nd
             fp = [0] * nd
             for idx, detection in enumerate(dr_data):
                 file_id = detection["file_id"]
@@ -475,6 +482,7 @@ def evaluate_detection(GT_PATH = 'tmp/ground-truth/',
                             if not bool(gt_match["used"]):
                                 # true positive
                                 tp[idx] = 1
+                                iou_tester[idx]=ovmax
                                 gt_match["used"] = True
                                 count_true_positives[class_name] += 1
                                 # update the ".json" file
@@ -484,6 +492,8 @@ def evaluate_detection(GT_PATH = 'tmp/ground-truth/',
                             else:
                                 # false positive (multiple detection)
                                 fp[idx] = 1
+
+
                                 
                 else:
                     # false positive
@@ -495,7 +505,8 @@ def evaluate_detection(GT_PATH = 'tmp/ground-truth/',
                  Draw image to show animation
                 """
                 
-            #print(tp)
+            print(tp)
+            print ('aaa',iou_tester)
             # compute precision/recall
             cumsum = 0
             for idx, val in enumerate(fp):
@@ -513,7 +524,7 @@ def evaluate_detection(GT_PATH = 'tmp/ground-truth/',
             prec = tp[:]
             for idx, val in enumerate(tp):
                 prec[idx] = float(tp[idx]) / (fp[idx] + tp[idx])
-            #print(prec)
+            print(prec)
     
             ap, mrec, mprec = voc_ap(rec[:], prec[:])
             sum_AP += ap
