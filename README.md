@@ -70,7 +70,10 @@ conda create -n falon python=3.10
 conda activate falcon
 pip install -r requirements.txt
 ```
-Optionally, we also provide a Docker image in [here](https://hub.docker.com/r/tianhuilab/falcon/tags) for fast deployment of the environment.
+Optionally, we also provide a Docker image in [here](https://hub.docker.com/r/tianhuilab/falcon/tags) for fast deployment of the environment. You can use the following script to pull this Docker image：
+```bash
+docker pull tianhuilab/falcon:1209
+```
 </details>
 
 <details>
