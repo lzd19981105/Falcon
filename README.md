@@ -24,28 +24,21 @@ We are excited to introduce Falcon, which offers a unified, prompt-based paradig
 Here we provide some demonstrations of Falcon on several remote sensing image interpretation task:
 
 <details>
-  <summary>Demo for image captioning with Falcon:</summary>
+  <summary>Demo for image-level tasks:</summary>
 <div align="center">
-  <img width="500" alt="image" src="assets/tianhui.png">
+  <img width="800" alt="image" src="assets/demo1.gif">
   <br>
 </div>
 </details>
 
 <details>
-  <summary>Demo for image region captioning with Falcon:</summary>
+  <summary>Demo for region-level tasks:</summary>
 <div align="center">
-  <img width="500" alt="image" src="assets/tianhui.png">
+  <img width="800" alt="image" src="assets/demo2.gif">
   <br>
 </div>
 </details>
 
-<details>
-  <summary>Demo for object detection with Falcon:</summary>
-<div align="center">
-  <img width="500" alt="image" src="assets/tianhui.png">
-  <br>
-</div>
-</details>
 
 ## News 🚀🚀🚀
 
