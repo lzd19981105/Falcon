@@ -24,7 +24,7 @@ We are excited to introduce Falcon, which offers a unified, prompt-based paradig
 Here we provide some demonstrations of Falcon on several remote sensing image interpretation tasks:
 
 <details>
-  <summary>Demo for image-level tasks:</summary>
+  <summary>Demo for image-level tasks: (click to expand)</summary>
 <div align="center">
   <img width="800" alt="image" src="assets/demo1.gif">
   <br>
@@ -32,7 +32,7 @@ Here we provide some demonstrations of Falcon on several remote sensing image in
 </details>
 
 <details>
-  <summary>Demo for region-level tasks:</summary>
+  <summary>Demo for region-level tasks: (click to expand)</summary>
 <div align="center">
   <img width="800" alt="image" src="assets/demo2.gif">
   <br>
