@@ -21,7 +21,7 @@
 We are excited to introduce Falcon, which offers a unified, prompt-based paradigm that effectively executes comprehensive and complex remote sensing vision tasks. Falcon demonstrates powerful understanding and reasoning abilities at the image, region, and pixel levels. Specifically, given simple natural language instructions and remote sensing images, Falcon can produce impressive results in text form across 14 distinct tasks, i.e., image classification, object detection, segmentation, image captioning, and etc.
 
 ## Demonstration
-Here we provide some demonstrations of Falcon on several remote sensing image interpretation task:
+Here we provide some demonstrations of Falcon on several remote sensing image interpretation tasks:
 
 <details>
   <summary>Demo for image-level tasks:</summary>
