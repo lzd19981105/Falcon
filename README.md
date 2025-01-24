@@ -74,6 +74,9 @@ Here we provide some demonstrations of Falcon on several remote sensing image in
   </tr>
 </table>
 
+## FCD-78M
+FCD-78M dataset can be found in [here](https://www.modelscope.cn/datasets/TianHuiLab/FCD-78M).
+
 ## What can Falcon do?
 ![opencompass](assets/task_example.png)
 
@@ -218,7 +221,7 @@ python inference.py \
 <details>
   <summary>Datasets preperation (click to expand)</summary>
 
-Download FCD-78M dataset which can be found in [here](https://www.modelscope.cn/datasets/TianHuiLab/FCD-78M). Then, unzip and place/link the dataset at the root path of this repo. The directory structure should be as follows:
+Unzip and place/link the dataset at the root path of this repo. The directory structure should be as follows:
 ```bash
 |-FCD
 |----json_train_taskall
