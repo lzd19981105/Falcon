@@ -42,7 +42,11 @@ Here we provide some demonstrations of Falcon on several remote sensing image in
 
 ## News 🚀🚀🚀
 
-- `2024/11/27`: Falcon has been released. The model checkpoints is now available on HuggingFace & modelscope, and both training / evaluation scripts are open-sourced. The FCD-78M dataset is coming soon!
+- `2024/11/27`: Falcon has been released. The model checkpoints is now available on HuggingFace & modelscope, and both training / evaluation scripts are open-sourced. The Falcon_SFT dataset is coming soon!
+
+
+## Falcon_SFT
+The dataset Falcon_SFT can be found in [here](https://www.modelscope.cn/datasets/TianHuiLab/FCD-78M).
 
 
 ## Model Zoo
@@ -218,7 +222,7 @@ python inference.py \
 <details>
   <summary>Datasets preperation (click to expand)</summary>
 
-Download FCD-78M dataset which can be found in [here](https://www.modelscope.cn/datasets/TianHuiLab/FCD-78M). Then, unzip and place/link the dataset at the root path of this repo. The directory structure should be as follows:
+Download Falcon_SFT dataset which can be found in [here](https://www.modelscope.cn/datasets/TianHuiLab/FCD-78M). Then, unzip and place/link the dataset at the root path of this repo. The directory structure should be as follows:
 ```bash
 |-FCD
 |----json_train_taskall
@@ -239,7 +243,7 @@ Download FCD-78M dataset which can be found in [here](https://www.modelscope.cn/
 </details>
 
 <details>
-  <summary>Training Falcon with FCD-78M (click to expand)</summary>
+  <summary>Training Falcon with Falcon_SFT (click to expand)</summary>
 
 1. Download the checkpoints you want and place them at the root path of this repo. The directory structure should be as follows:
 ```bash
@@ -269,7 +273,7 @@ python multi_node_distributed_train.py \
     --master_addr $MASTER_ADDR \
     --master_port $MASTER_PORT \
     --checkpoint_path <path_to_the_checkpoint_you_want> \
-    --dataset FCD-78M \
+    --dataset Falcon_SFT \
     --label_json FCD/json_train_taskall/train_task14_all.json \
     --num_workers 2 \
     --batch_size 7 \
@@ -279,16 +283,15 @@ python multi_node_distributed_train.py \
 </details>
 
 <details>
-  <summary>Evaluating Falcon with FCD-78M (click to expand)</summary>
+  <summary>Evaluating Falcon with Falcon_SFT (click to expand)</summary>
 
-1. Here we provide an example of the evaluation program to evaluate Falcon using FCD-78M dataset with the json annotation file.
+1. Here we provide an example of the evaluation program to evaluate Falcon using Falcon_SFT dataset with the json annotation file.
 
 ```bash
 GPU=0
 CUDA_VISIBLE_DEVICES=$GPU python single_gpu_inference_eval.py \
     --model-path model_checkpoints/<checkpoint_dir_name> \
     --eval-file FCD/<task_dir>/test/Annotation_test.json \
-    --dataset-path FCD-78M \
     --model-name Falcon \
     --result-path ./ \
     --batch_size 8 \
