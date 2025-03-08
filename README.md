@@ -78,8 +78,8 @@ The dataset Falcon_SFT can be found in [here](https://www.modelscope.cn/datasets
   </tr>
 </table>
 
-## FCD-78M
-FCD-78M dataset can be found in [here](https://www.modelscope.cn/datasets/TianHuiLab/FCD-78M).
+## Falcon_SFT
+Falcon_SFT dataset can be found in [here](https://www.modelscope.cn/datasets/TianHuiLab/FCD-78M).
 
 ## What can Falcon do?
 ![opencompass](assets/task_example.png)
