@@ -41,6 +41,8 @@ Here we provide some demonstrations of Falcon on several remote sensing image in
 
 ## News 🚀🚀🚀
 
+- `2025/03/15`: The Falcon_SFT dataset has been released.
+
 - `2024/11/27`: Falcon has been released. The model checkpoints is now available on HuggingFace & modelscope, and both training / evaluation scripts are open-sourced. The Falcon_SFT dataset is coming soon!
 
 
