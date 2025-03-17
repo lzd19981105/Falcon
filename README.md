@@ -11,7 +11,6 @@
 
 
 
-<img height="55" alt="image" src="https://github.com/user-attachments/assets/bd62ab46-f0ea-40c6-ab10-7fde671716cc">
 
 ![opencompass](assets/radar_graph.png)
 
