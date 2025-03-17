@@ -326,8 +326,8 @@ If you find this project useful in your research, please consider cite:
 ```BibTeX
 @article{yao2025falcon,
   title={Falcon: A Remote Sensing Vision-Language Foundation Model},
-  author={kelu, Yao and Nuo, Xu and Rong, Yang and Yingying, Xu and Titinunt, Kitrungrotsakul and Zhuoyan, Gao and yi, Ren and Jin, Wang and Ning, Wei and Chao, Li},
-  journal={arXiv preprint arXiv:XXXX.XXXXX},
+  author={kelu, Yao and Nuo, Xu and Rong, Yang and Yingying, Xu and Zhuoyan, Gao and Titinunt, Kitrungrotsakul and yi, Ren and Pu, Zhang and Jin, Wang and Ning, Wei and Chao, Li},
+  journal={arXiv preprint arXiv:https://arxiv.org/abs/2503.11070},
   year={2025}
 }
 ```
