@@ -7,7 +7,7 @@
   <br>
 </div>
 
-[\[🚀 Quick Start\]](#quick-start-with-Falcon)
+[\[🚀 Quick Start\]](#quick-start-with-Falcon) [\[📖 Paper\]](https://arxiv.org/abs/2503.11070)\]
 
 
 
