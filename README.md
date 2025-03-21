@@ -41,7 +41,7 @@ Here we provide some demonstrations of Falcon on several remote sensing image in
 
 ## News 🚀🚀🚀
 
-- `2025/03/15`: The Falcon_SFT dataset has been released.
+<!-- - `2025/03/15`: The Falcon_SFT dataset has been released. -->
 
 - `2024/11/27`: Falcon has been released. The model checkpoints is now available on HuggingFace & modelscope, and both training / evaluation scripts are open-sourced. The Falcon_SFT dataset is coming soon!
 
@@ -75,8 +75,8 @@ Here we provide some demonstrations of Falcon on several remote sensing image in
   </tr>
 </table>
 
-## Falcon_SFT
-Falcon_SFT dataset can be found in [here](https://www.modelscope.cn/datasets/TianHuiLab/FCD-78M) and [here](https://www.modelscope.cn/datasets/TianHuiLab/FCD-78M-2/summary).
+<!-- ## Falcon_SFT
+Falcon_SFT dataset can be found in [here](https://www.modelscope.cn/datasets/TianHuiLab/FCD-78M) and [here](https://www.modelscope.cn/datasets/TianHuiLab/FCD-78M-2). -->
 
 ## What can Falcon do?
 ![opencompass](assets/task_example.png)
