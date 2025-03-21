@@ -76,7 +76,7 @@ Here we provide some demonstrations of Falcon on several remote sensing image in
 </table>
 
 ## Falcon_SFT
-Falcon_SFT dataset can be found in [here](https://www.modelscope.cn/datasets/TianHuiLab/FCD-78M).
+Falcon_SFT dataset can be found in [here](https://www.modelscope.cn/datasets/TianHuiLab/FCD-78M) and [here](https://www.modelscope.cn/datasets/TianHuiLab/FCD-78M-2/summary).
 
 ## What can Falcon do?
 ![opencompass](assets/task_example.png)
