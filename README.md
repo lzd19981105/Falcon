@@ -88,7 +88,7 @@ Falcon_SFT dataset can be found in [here](https://www.modelscope.cn/datasets/Tia
 You can use the following script to install the environment：
 
 ```bash
-conda create -n falon python=3.10
+conda create -n falcon python=3.10
 conda activate falcon
 pip install -r requirements.txt
 ```
