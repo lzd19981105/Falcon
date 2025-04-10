@@ -165,7 +165,7 @@ python inference.py \
     --checkpoint_path <path_to_the_checkpoint_you_want> \
     --image_path image_samples/REG_DET_HBB/[REG_DET_HBB]_004_DIOR_5212_12735_ori.png \
     --post_process_type REG_DET_HBB \
-    --prompt "Detect all stadium in the image."
+    --prompt "Detect all stadium in the image.\nUse horizontal bounding boxes."
 ```
 ```bash
 # Inference for Region Detection-OBB task
