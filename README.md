@@ -109,7 +109,7 @@ python inference.py \
     --checkpoint_path <path_to_the_checkpoint_you_want> \
     --image_path image_samples/IMG_CLS/[IMG_CLS]_003_AID_3525_river_192_ori.png \
     --post_process_type IMG_CLS \
-    --prompt "Classify the image. Use one or a few words."
+    --prompt "Classify the image.\nUse one or a few words."
 ```
 ```bash
 # Inference for Visual Question Answering task
