@@ -56,22 +56,22 @@ Here we provide some demonstrations of Falcon on several remote sensing image in
     <th>MS&nbsp;Link</th>
   </tr>
   <tr>
-    <td>Falcon-Single-Instruction-Base</td>
-    <td>0.3B</td>
-    <td><a href="https://huggingface.co/TianHuiLab/Falcon-Single-Instruction-Base">🤗 link</a></td>
-    <td><a href="https://www.modelscope.cn/models/TianHuiLab/Falcon-Single-Instruction-Base">🤖 link</a></td>
-  </tr>
-  <tr>
-    <td>Falcon-Single-Instruction-Large</td>
+    <td>Falcon-Single-Instruction-Large (Default)</td>
     <td>0.7B</td>
     <td><a href="https://huggingface.co/TianHuiLab/Falcon-Single-Instruction-Large">🤗 link</a></td>
     <td><a href="https://www.modelscope.cn/models/TianHuiLab/Falcon-Single-Instruction-Large">🤖 link</a></td>
   </tr>
   <tr>
-    <td>Falcon-Multi-Instruction-Large</td>
+    <td>Falcon-Multi-Instruction-Large (Unstable)</td>
     <td>0.7B</td>
     <td><a href="https://huggingface.co/TianHuiLab/Falcon-Multi-Instruction-Large">🤗 link</a></td>
     <td><a href="https://www.modelscope.cn/models/TianHuiLab/Falcon-Multi-Instruction-Large">🤖 link</a></td>
+  </tr>
+  <tr>
+    <td>Falcon-Single-Instruction-Base</td>
+    <td>0.3B</td>
+    <td><a href="https://huggingface.co/TianHuiLab/Falcon-Single-Instruction-Base">🤗 link</a></td>
+    <td><a href="https://www.modelscope.cn/models/TianHuiLab/Falcon-Single-Instruction-Base">🤖 link</a></td>
   </tr>
 </table>
 
@@ -88,7 +88,7 @@ Falcon_SFT dataset can be found in [here](https://www.modelscope.cn/datasets/Tia
 You can use the following script to install the environment：
 
 ```bash
-conda create -n falon python=3.10
+conda create -n falcon python=3.10
 conda activate falcon
 pip install -r requirements.txt
 ```
@@ -109,7 +109,7 @@ python inference.py \
     --checkpoint_path <path_to_the_checkpoint_you_want> \
     --image_path image_samples/IMG_CLS/[IMG_CLS]_003_AID_3525_river_192_ori.png \
     --post_process_type IMG_CLS \
-    --prompt "Classify the image."
+    --prompt "Classify the image. Use one or a few words."
 ```
 ```bash
 # Inference for Visual Question Answering task
