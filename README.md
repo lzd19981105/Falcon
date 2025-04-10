@@ -62,7 +62,7 @@ Here we provide some demonstrations of Falcon on several remote sensing image in
     <td><a href="https://www.modelscope.cn/models/TianHuiLab/Falcon-Single-Instruction-Large">🤖 link</a></td>
   </tr>
   <tr>
-    <td>Falcon-Multi-Instruction-Large (Unstable)</td>
+    <td>Falcon-Multi-Instruction-Large</td>
     <td>0.7B</td>
     <td><a href="https://huggingface.co/TianHuiLab/Falcon-Multi-Instruction-Large">🤗 link</a></td>
     <td><a href="https://www.modelscope.cn/models/TianHuiLab/Falcon-Multi-Instruction-Large">🤖 link</a></td>
